@@ -9,6 +9,7 @@ public:
         assert(denom != 0);
         numerator = num;
         denominator = denom;
+        cut();
     }
     long long int numerator;
     long long int denominator;

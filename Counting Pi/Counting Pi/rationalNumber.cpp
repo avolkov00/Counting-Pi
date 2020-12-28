@@ -33,7 +33,7 @@ rationalNumber rationalNumber::operator+(rationalNumber num)
 rationalNumber rationalNumber::operator-(rationalNumber num)
 {
     rationalNumber sum(1, 1);
-    sum.numerator = (-1)*(numerator * num.denominator + denominator * num.numerator);
+    sum.numerator = (numerator * num.denominator + (-1) * denominator * num.numerator);
     sum.denominator = denominator * num.denominator;
     sum.cut();
     return sum;
